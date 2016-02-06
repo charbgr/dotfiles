@@ -1,0 +1,66 @@
+[user]
+	name = charbgr
+	email = bmpak04@gmail.com
+[core]
+  editor = "nano"
+	excludesfile = /Users/basilischaralampakis/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+  co = checkout
+  go = checkout -b
+  st = status
+  pr = pull --rebase
+  br = branch
+  filediff = diff --name-only
+  last = log -1 HEAD
+  fixup = commit --fixup
+
+  # Show the diff between the latest commit and the current state
+  d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+
+  # `git di $number` shows the diff between the state `$number` revisions ago and the current state
+  di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+
+  # Log display from screencast, with train tracks.
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  lg = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+  # Alternate log display from Scott Chacon
+  lg2 = log --pretty=oneline --abbrev-commit --graph --decorate
+
+  # Include all branches
+  lol = log --pretty=oneline --graph --all --decorate
+
+
+  # Other useful aliases:
+  merge-ignore-space = merge -Xignore-all-space
+  unstage = reset HEAD --
+  staged = diff --cached
+  unstaged = diff
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+
+  track = checkout -t # Usage: git track origin/feature-123-login-form
+  unmerged = branch --no-merged
+  merged = branch --merged
+  since = !git rev-list $1.. --count # Usage: git since master
+  count = shortlog -sn
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = always
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
