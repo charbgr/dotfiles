@@ -13,7 +13,7 @@ alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
 alias grep="grep --color"
 
 #weather
-curl -4 wttr.in/Athens
+alias weather="curl -4 wttr.in/Athens"
 
 # Backup
 alias backup=""
