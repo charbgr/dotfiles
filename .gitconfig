@@ -35,6 +35,8 @@
 
   # Include all branches
   lol = log --pretty=oneline --graph --all --decorate
+  
+  teleport = !"d() { git reset --hard origin/$1; }; git checkout $1; git fetch; d"
 
 
   # Other useful aliases:
