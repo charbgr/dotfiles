@@ -2,7 +2,7 @@
 	name = charbgr
 	email = bmpak04@gmail.com
 [core]
-  editor = "nano"
+  editor = "vim"
 	excludesfile = /Users/basilischaralampakis/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
