@@ -8,6 +8,7 @@ alias sbp="source ~/.bash_profile"
 #Android Stuffs
 alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
+alias deep-link="adb shell am start -a "android.intent.action.VIEW" -d $1"
 
 # Highlight grep.
 alias grep="grep --color"
