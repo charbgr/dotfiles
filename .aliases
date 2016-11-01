@@ -10,6 +10,9 @@ alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
 alias deep-link="adb shell am start -a "android.intent.action.VIEW" -d $1"
 
+#Kotlin
+alias kotlin-repl='/usr/local/bin/kotlinc-jvm'
+
 # Highlight grep.
 alias grep="grep --color"
 
