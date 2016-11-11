@@ -1,5 +1,6 @@
 #ahh this typo
 alias gti="git"
+alias standup="git log --since=yesterday --pretty=format:\"%cn - %s\""
 
 #Bash profile
 alias bp="nano ~/.bash_profile"
