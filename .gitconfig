@@ -56,6 +56,8 @@
   branches = branch -a
   remotes = remote -v
   gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'
+  
+  sync = !"git branch --merged | grep -Ev \"(\\*|master|develop)\" | xargs -n 1 git branch -d"
 
 [color]
   diff = auto
