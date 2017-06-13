@@ -1,0 +1,15 @@
+#!/bin/bash
+# git branchpurge
+# Delete local branches that have been merged
+
+# http://stackoverflow.com/questions/17983068/delete-local-git-branches-after-deleting-them-on-the-remote-repo
+start() {
+  git fetch --prune
+  git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d
+}
+
+alias git-branchpurge=start
+
+# instead, delete local branches that were removed at origin?
+# http://stackoverflow.com/questions/17983068/delete-local-git-branches-after-deleting-them-on-the-remote-repo#comment45770633_28020809
+# git checkout master; git pull origin master; git fetch --all -p; git branch -vv | grep ": gone]" | awk '{ print $1 }' | xargs -n 1 git branch -d
