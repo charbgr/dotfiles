@@ -1,4 +1,4 @@
-for file in ~/.{bash_prompt,aliases,git-sync}; do
+for file in ~/.{bash_prompt,aliases,git-sync,git-branchpurge}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
