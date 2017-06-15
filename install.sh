@@ -11,3 +11,5 @@ brew install bash-completion
 git clone https://github.com/charbgr/dotfiles.git
 mv -v ./dotfiles/* ~/
 mv -v ./dotfiles/.* ~/
+
+source ~/.bash_profile
