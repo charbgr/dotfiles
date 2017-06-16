@@ -8,6 +8,7 @@ brew install git
 brew install bash-completion
 
 # General stuff
+brew cask install java
 brew install kotlin
 
 # Clone dotfiles
