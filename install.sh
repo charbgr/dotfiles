@@ -7,6 +7,9 @@
 brew install git
 brew install bash-completion
 
+# General stuff
+brew install kotlin
+
 # Clone dotfiles
 git clone https://github.com/charbgr/dotfiles.git
 mv -v ./dotfiles/* ~/
