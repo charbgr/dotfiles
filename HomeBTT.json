@@ -10,13 +10,14 @@
       },
       "BTTTriggers" : [
         {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 171,
-          "BTTPredefinedActionName" : "Capture Screenshot then edit in BTT (easiest)",
+          "BTTTriggerType" : 996,
+          "BTTTriggerTypeDescription" : "Scroll Up",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTPredefinedActionType" : 24,
+          "BTTPredefinedActionName" : "Volume Up",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 18,
-          "BTTShortcutModifierKeys" : 1179648,
-          "BTTOrder" : 0
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 7
         },
         {
           "BTTTriggerType" : 1004,
@@ -27,15 +28,6 @@
           "BTTEnabled" : 1,
           "BTTRequiredModifierKeys" : 1048576,
           "BTTOrder" : 2
-        },
-        {
-          "BTTTriggerType" : 1003,
-          "BTTTriggerTypeDescription" : "Button 3",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTPredefinedActionType" : 77,
-          "BTTPredefinedActionName" : "3F Swipe Left (Page Back)",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
         },
         {
           "BTTTriggerType" : 999,
@@ -55,6 +47,41 @@
           "BTTOrder" : 1
         },
         {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 171,
+          "BTTPredefinedActionName" : "Capture Screenshot then edit in BTT (easiest)",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 998,
+          "BTTTriggerTypeDescription" : "Scroll Right",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTShortcutToSend" : "124",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerType" : 1002,
+          "BTTTriggerTypeDescription" : "Middle Mouse Button",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTPredefinedActionType" : 116,
+          "BTTPredefinedActionName" : "Lookup Word Under Cursor",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 8
+        },
+        {
+          "BTTTriggerType" : 1003,
+          "BTTTriggerTypeDescription" : "Button 3",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTPredefinedActionType" : 77,
+          "BTTPredefinedActionName" : "3F Swipe Left (Page Back)",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        },
+        {
           "BTTTriggerType" : 1003,
           "BTTTriggerTypeDescription" : "Button 3",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -65,12 +92,14 @@
           "BTTOrder" : 3
         },
         {
-          "BTTTriggerType" : 998,
-          "BTTTriggerTypeDescription" : "Scroll Right",
+          "BTTTriggerType" : 997,
+          "BTTTriggerTypeDescription" : "Scroll Down",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTShortcutToSend" : "124",
+          "BTTPredefinedActionType" : 25,
+          "BTTPredefinedActionName" : "Volume Down",
           "BTTEnabled" : 1,
-          "BTTOrder" : 5
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 6
         }
       ]
     },
