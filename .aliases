@@ -9,7 +9,10 @@ alias sbp="source ~/.bash_profile"
 #Android Stuffs
 alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
-alias deep-link="adb shell am start -a "android.intent.action.VIEW" -d $1"
+deep-link() {
+    url=$(echo $1 | sed 's/&/\\&/g')
+    adb shell am start -a "android.intent.action.VIEW" -d "${url}"
+}
 
 #Kotlin
 alias kotlin-repl='/usr/local/bin/kotlinc-jvm'
