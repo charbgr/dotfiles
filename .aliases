@@ -1,12 +1,12 @@
-#ahh this typo
+# ahh this typo
 alias gti="git"
 alias standup="git log --since=yesterday --pretty=format:\"%cn - %s\""
 
-#Bash profile
+# Bash profile
 alias bp="nano ~/.bash_profile"
 alias sbp="source ~/.bash_profile"
 
-#Android Stuffs
+# Android Stuffs
 alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
 deep-link() {
@@ -14,13 +14,17 @@ deep-link() {
     adb shell am start -a "android.intent.action.VIEW" -d "${url}"
 }
 
-#Kotlin
+# Kotlin
 alias kotlin-repl='/usr/local/bin/kotlinc-jvm'
+
+# Gradle
+# Cleanup gradle caches - props: https://github.com/gradle/gradle/issues/2304
+alias gradle-cache-cleanup="du -hs ~/.gradle && find ~/.gradle -type f -atime +30 -delete && find ~/.gradle -type d -mindepth 1 -empty -delete && du -hs ~/.gradle"
 
 # Highlight grep.
 alias grep="grep --color"
 
-#weather
+# weather
 alias weather="curl -4 wttr.in/Athens"
 
 # Backup
