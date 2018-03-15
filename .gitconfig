@@ -37,7 +37,8 @@
   lol = log --pretty=oneline --graph --all --decorate
   
   teleport = !"d() { git reset --hard origin/$1; }; git checkout $1; git fetch; d"
-
+  freset = !"git fetch; git reset --hard origin/$(git current-branch)"
+  current-branch = 'git rev-parse --abbrev-ref HEAD'
 
   # Other useful aliases:
   merge-ignore-space = merge -Xignore-all-space
