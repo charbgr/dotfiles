@@ -64,6 +64,8 @@
   distance = !git rev-list $1.. --count 
   authors = shortlog -sn --no-merges
   # Search all commits that introduced or removed a string
+  # append -p to print logs
+  # e.g git seek foo -p
   seek = log --source --all -S
 
 [color]
