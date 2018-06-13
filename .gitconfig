@@ -59,6 +59,12 @@
   gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'
   
   sync = !"git branch --merged | grep -Ev \"(\\*|master|develop)\" | xargs -n 1 git branch -d"
+  
+  # Number of commits since ref: git distance <ref>
+  distance = !git rev-list $1.. --count 
+  authors = shortlog -sn --no-merges
+  # Search all commits that introduced or removed a string
+  seek = log --source --all -S
 
 [color]
   diff = auto
