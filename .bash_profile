@@ -13,9 +13,7 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Load git completions
 [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ] && source /usr/local/etc/bash_completion.d/git-prompt.sh
-if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
-  . /opt/local/etc/profile.d/bash_completion.sh
-fi
+[ -f /usr/local/etc/bash_completion.d/git-completion.bash ] && source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Gradle completions
 source $HOME/bash_completion.d/gradle-completion.bash
