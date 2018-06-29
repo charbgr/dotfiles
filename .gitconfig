@@ -39,6 +39,7 @@
   teleport = !"d() { git reset --hard origin/$1; }; git checkout $1; git fetch; d"
   freset = !"git fetch; git reset --hard origin/$(git current-branch)"
   current-branch = 'git rev-parse --abbrev-ref HEAD'
+  amend = !"git add .; git commit --amend --no-edit"
 
   # Other useful aliases:
   merge-ignore-space = merge -Xignore-all-space
