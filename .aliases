@@ -8,7 +8,7 @@ alias sbp="source ~/.bash_profile"
 
 # Android Stuffs
 alias adb="~/Library/Android/sdk/platform-tools/adb"
-alias uiauto="~/Library/Android/sdk/tools/uiautomatorviewer"
+alias uiauto="~/Library/Android/sdk/tools/bin/uiautomatorviewer"
 deep-link() {
     url=$(echo $1 | sed 's/&/\\&/g')
     adb shell am start -a "android.intent.action.VIEW" -d "${url}"
