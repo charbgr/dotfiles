@@ -14,7 +14,7 @@ curl -LA gradle-completion https://edub.me/gradle-completion-bash -o $HOME/bash_
 # General stuff
 brew cask install java
 brew install kotlin
-brew install shyiko/ktlint/ktlint
+brew install ktlint
 
 # Clone dotfiles
 git clone https://github.com/charbgr/dotfiles.git
