@@ -67,6 +67,9 @@
   # append -p to print logs
   # e.g git seek foo -p
   seek = log --source --all -S
+  
+  # Shows last merge commits. Defaults to last 10 if no number passed
+  last-merge-commits = !"f() { git log --pretty=format:'%s' --merges -n ${1:-10}; }; f"
 
 [color]
   diff = auto
