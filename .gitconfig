@@ -50,7 +50,6 @@
   track = checkout -t # Usage: git track origin/feature-123-login-form
   unmerged = branch --no-merged
   merged = branch --merged
-  since = !git rev-list $1.. --count # Usage: git since master
   count = shortlog -sn
   # Show verbose output about tags, branches or remotes
   tags = tag -l
