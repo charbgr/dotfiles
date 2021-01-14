@@ -69,6 +69,10 @@
   
   # Shows last merge commits. Defaults to last 10 if no number passed
   last-merge-commits = !"f() { git log --pretty=format:'%s' --merges -n ${1:-10}; }; f"
+  
+  # Cleanup local branches that are merged in remote
+  clear-merged = !"git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
+
 
 [color]
   diff = auto
