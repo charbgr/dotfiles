@@ -7,13 +7,8 @@
 brew install git
 brew install bash-completion
 
-# Git completion for zsh
-mkdir -p ~/.zsh
-cd ~/.zsh
-
-# Download the scripts
-curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+# Install Oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # General stuff
 brew cask install java
