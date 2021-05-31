@@ -7,10 +7,6 @@
 brew install git
 brew install bash-completion
 
-# Gradle stuff
-mkdir $HOME/bash_completion.d
-curl -LA gradle-completion https://edub.me/gradle-completion-bash -o $HOME/bash_completion.d/gradle-completion.bash
-
 # General stuff
 brew cask install java
 brew install kotlin
