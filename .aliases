@@ -15,7 +15,7 @@ deep-link() {
 }
 
 # Kotlin
-alias kotlin-repl='/usr/local/bin/kotlinc-jvm'
+alias kotlin-repl='kotlin'
 
 # Gradle
 # Cleanup gradle caches - props: https://github.com/gradle/gradle/issues/2304
